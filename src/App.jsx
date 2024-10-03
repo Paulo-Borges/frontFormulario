@@ -10,7 +10,6 @@ import { boolean, object, string } from "yup"
 const schema = object({
   first_name: string().required("This field is required").min(3, "You need to enter at least 3 characters."),
   last_name: string().required("This field is required").min(3, "You need to enter at least 3 characters."),
-  email_address: string().required("Please enter a valid email address"),
   query: string().required("please select a query type"),
   confirm: boolean().required("to submit this form, please consent to being contacted"),
   
